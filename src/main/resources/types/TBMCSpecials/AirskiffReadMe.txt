@@ -1,15 +1,15 @@
-Airship
+Airskiff
 
 Maximum Allowed Blocks:
-7500
+200
 
 Minimum Required Bocks:
-1000
+10
 
-The next smallest Airship is the LightAirship.
-The next largest Airship is the BigAirship.
+This is the smallest pilotable craft.
+The next largest Airship is the BigAirskiff.
 
-The Airship is the base model of all "Flying Only" craft.
+The Airskiff is the base model of "Fighter" craft.
 
 The list of allowed blocks is:
 
@@ -37,26 +37,20 @@ The list of allowed blocks is:
     - 29
 Piston
     - 33
-Piston Head
-    - 34
 Wool	
     - 35
 Gold Block
     - 41
-Iron Block
-    - 42
 Double Stone Slab
     - 43
 Stone Slab
     - 44
 Bookshelf
     - 47
-Obsidian
-    - 49
 Torch
     - 50
-Fire
-    - 51
+Monster Spawner
+    - 52
 Oak Wood Stair
     - 53
 Chest
@@ -81,10 +75,6 @@ The list of allowed blocks is:
     - 68
 Lever
     - 69
-Stone Pressure Plate
-    - 70
-Iron Door BLock
-    - 71
 Wooden Pressure Plate
     - 72
 Redstone Torch (off)
@@ -93,14 +83,8 @@ The list of allowed blocks is:
     - 76
 Stone Button
     - 77
-Clay
-    - 82
 Oak Fence
     - 85
-Netherrack
-    - 87
-Glowstone
-    - 89
 Cake Block
     - 92
 Redstone Repeater Block (off)
@@ -111,30 +95,18 @@ The list of allowed blocks is:
     - 95
 Wooden Trapdoor
     - 96
-@Stone Bricks
-    - 98
 Iron Bars
     - 101
 Glass Pane
     - 102
 Oak Fence Gate
     - 107
-Stone Brick Stairs
-    - 109
-Nether Brick
-    - 112
 Nether Brick Fence
     - 113
-Nether Brick Stairs
-    - 114
-Enchantment Table
-    - 116
 Brewing Stand
     - 117
 Cauldron
     - 118
-Dragon Egg
-    - 122
 Redstone Lamp (inactive)
     - 123
 Redstone Lamp (active)
@@ -157,8 +129,6 @@ The list of allowed blocks is:
     - 136
 Beacon
     - 138
-Cobblestone Wall
-    - 139
 Flower Pot
     - 140
 Wooden Button
@@ -183,60 +153,16 @@ The list of allowed blocks is:
     - 152
 Hopper
     - 154
-Quartz Block
-    - 155
-Quartz Stairs
-    - 156
-Activator Rail
+Activator Rail
     - 157
-Dropper
-    - 158
-Hardened Clay
-    - 159
-Colored Stained Glass
-    - 160
 Carpet
     - 171
-Hardened Clay
-    - 172
-Block of Coal
+Block of Coal
     - 173
-Slime Block
-    - 165
 Iron Trap Door
     - 167
-Spruce Fence Gate
-    - 183
-Birch Fence Gate
-    - 184
-Jungle Fence Gate
-    - 185
-Dark Oak Fence Gate
-    - 186
-Acacia Fence Gate
-    - 187
-Spruce Fence
-    - 188
-Birch Fence
-    - 189
-Jungle Fence
-    - 190
-Dark Oak Fence
-    - 191
-Acacia Fence
-    - 192
-Spruce Door Block
-    - 193
-Birch Door Block
-    - 194
-Jungle Door Block
-    - 195
-Dark Oak Door Block
-    - 196
-Acacia Door Block
-    - 197
 
-The list of explicitly Banned Blocks is:
+The list of Banned Blocks is:
 
 Free Standing Banner
     - 176  
@@ -248,16 +174,18 @@ The list of blocks that will cause the Registration script to fail is:
 Piston Head
     - 34
 
-To register the craft, there must be a sign with Airship in the first line. Right clicking the sign will trigger the registration script to check the composition of the build.
+To register the craft, there must be a sign with Airskiff in the first line. Right clicking the sign will trigger the registration script to check the composition of the build.
 
 This model is able to utilize Cruise, Ascent, and Descent signs for moving.
 This model is able to utilize [helm] signs for turning.
 
 Being a member of the Flying Only craft, this model can Fly.
-Its limits are no more than 256 height total, and a maximum of 100 blocks above ground.
+Its limits are no more than 200 height total, and a maximum of 50 blocks above ground.
 
-Using a stick, this craft's speed is 2.5 M/Second.
-While cruising, this craft's speed is .5(4+1M)/Second or 2.5M/Second.
+This means in certain very mountainous terrain close to the skylimit, this craft must go around at this time.
+
+Using a stick, this craft's speed is 3.0M/Second.
+While cruising, this craft's speed is 2.0(1+1M)/second or 4M/sec.
 
 This craft's furnaces must have fuel to move, and will burn that fuel at a rating of 2.0. Coal blocks last longer than Coal.
 
@@ -267,10 +195,10 @@ At least 45% of the total blocks are some color of Wool to provide enough lift.
 At least 2.5% of the total blocks are Redstone Blocks for the engines.
 At least 2.5% of the total blocks are Furnaces to power the engines.
 
-No more than 2% of the total blocks are chests and trapped chests, combined.
+No more than 2 of the total blocks are chests and trapped chests, combined.
 No more than 5% of the total blocks are dispensers, hoppers, and droppers combined.
 No more than 1% of the total blocks are anvils.
 No more than 1% of the total blocks are obsidian.
 No more than 1% of the total blocks are water.
 
-If the craft takes >1% damage to its flyblocks or >40% damage overall, it will sink to the ground and crash.
+If the craft takes >1% damage to its flyblocks or >3% damage overall, it will sink to the ground and crash. Upon crashing, this craft will explode.

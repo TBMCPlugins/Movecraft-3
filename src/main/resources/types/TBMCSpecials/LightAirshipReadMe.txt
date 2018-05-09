@@ -1,15 +1,13 @@
-Airship
+LightAirship
 
 Maximum Allowed Blocks:
-7500
-
-Minimum Required Bocks:
 1000
 
-The next smallest Airship is the LightAirship.
-The next largest Airship is the BigAirship.
+Minimum Required Bocks:
+500
 
-The Airship is the base model of all "Flying Only" craft.
+The next smallest Airship is the BigAirskiff
+The next largest Airship is the Airship.
 
 The list of allowed blocks is:
 
@@ -248,27 +246,29 @@ The list of blocks that will cause the Registration script to fail is:
 Piston Head
     - 34
 
-To register the craft, there must be a sign with Airship in the first line. Right clicking the sign will trigger the registration script to check the composition of the build.
+To register the craft, there must be a sign with LightAirship in the first line. Right clicking the sign will trigger the registration script to check the composition of the build.
 
 This model is able to utilize Cruise, Ascent, and Descent signs for moving.
 This model is able to utilize [helm] signs for turning.
 
 Being a member of the Flying Only craft, this model can Fly.
-Its limits are no more than 256 height total, and a maximum of 100 blocks above ground.
+Its limits are no more than 200 height total, and a maximum of 75 blocks above ground.
 
-Using a stick, this craft's speed is 2.5 M/Second.
-While cruising, this craft's speed is .5(4+1M)/Second or 2.5M/Second.
+This means in certain very mountainous terrain close to the skylimit, this craft must go around at this time.
+
+Using a stick, this craft's speed is 1.0 M/Second.
+While cruising, this craft's speed is .5(5+1M)/Second or 3M/Second.
 
 This craft's furnaces must have fuel to move, and will burn that fuel at a rating of 2.0. Coal blocks last longer than Coal.
 
 At the time of registration, the script will check on the following:
 
-At least 45% of the total blocks are some color of Wool to provide enough lift.
-At least 2.5% of the total blocks are Redstone Blocks for the engines.
+At least 75% of the total blocks are some color of Wool to provide enough lift.
+At least 1.0% of the total blocks are Redstone Blocks for the engines.
 At least 2.5% of the total blocks are Furnaces to power the engines.
 
-No more than 2% of the total blocks are chests and trapped chests, combined.
-No more than 5% of the total blocks are dispensers, hoppers, and droppers combined.
+No more than 3% of the total blocks are chests and trapped chests, combined.
+No more than 2% of the total blocks are dispensers, hoppers, and droppers combined.
 No more than 1% of the total blocks are anvils.
 No more than 1% of the total blocks are obsidian.
 No more than 1% of the total blocks are water.
